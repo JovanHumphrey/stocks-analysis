@@ -15,14 +15,14 @@ My initial script [AllStocksAnalysis()] worked well on 3013 rows of data for twe
 
 This would be untenable if the script was repurposed for a longer list of stocks. If left unchanged, this script could slow the user’s computer down considerably. I needed to refactor the script to decrease the runtime.
 
-###**Original Script All Stocks Analysis
+###**Original Script All Stocks Analysis**
 
 In the original script the code was designed to run through 3013 rows of data to collect information about twelve different stocks. With the use of nested for-loops and if/then conditions, the code did two primary things: 1. It identified the starting and ending price for each stock and calculated the rate of return based on the difference. 2. It added up the total daily volumes for each stock. See the results below.
 
 [2017 Results](stocks-analysis/2017.PNG at main · JovanHumphrey/stocks-analysis (github.com))
 [2018 Results](stocks-analysis/2018.PNG at main · JovanHumphrey/stocks-analysis (github.com))
 
-###**Refactored Script All Stocks Analysis Refactored
+###**Refactored Script All Stocks Analysis Refactored**
 
 In order to run the information, the original script utilized nested loops. This led to a slower runtime.  To correct this, I modified the if/then conditions to recall information in the array I had previously declared. While the original script had to run the if/then conditions of each stock before looping, the refactored script told the code to run the if/then condition while recalling the values in the array. The result was a visibly faster experience.
 
