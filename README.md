@@ -10,23 +10,17 @@ At the click of a button the end-user should be able to review the daily volume 
 
 My initial script [AllStocksAnalysis()] worked well on 3013 rows of data for twelve stocks but had an unreasonably long runtime.
 
-! [2017 Runtime](stocks-analysis/2017 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
-
-! [2018 Runtime](stocks-analysis/2018 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[2017 Runtime](stocks-analysis/2017 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[2018 Runtime](stocks-analysis/2018 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
 
 This would be untenable if the script was repurposed for a longer list of stocks. If left unchanged, this script could slow the user’s computer down considerably. I needed to refactor the script to decrease the runtime.
 
 ###**Original Script All Stocks Analysis
 
-In the original script the code was designed to run through 3013 rows of data to collect information about twelve different stocks. With the use of nested for-loops and if/then conditions, the code did two primary things:
+In the original script the code was designed to run through 3013 rows of data to collect information about twelve different stocks. With the use of nested for-loops and if/then conditions, the code did two primary things: 1. It identified the starting and ending price for each stock and calculated the rate of return based on the difference. 2. It added up the total daily volumes for each stock. See the results below.
 
--1. It identified the starting and ending price for each stock and calculated the rate of return based on the difference.
-
-- 2. It added up the total daily volumes for each stock. See the results below.
-
-![2017 Results](stocks-analysis/2017.PNG at main · JovanHumphrey/stocks-analysis (github.com))
-
-![2018 Results](stocks-analysis/2018.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[2017 Results](stocks-analysis/2017.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[2018 Results](stocks-analysis/2018.PNG at main · JovanHumphrey/stocks-analysis (github.com))
 
 ###**Refactored Script All Stocks Analysis Refactored
 
@@ -38,9 +32,8 @@ You can view my original and refactored scripts [here](stocks-analysis/VBA_Chall
 
 Refactoring allowed my script to run hundreds of thousands of times faster than the original.
 
-![Refactored 2017 Runtime](stocks-analysis/refactored 2017 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
-
-![Refactored 2018 Runtime](stocks-analysis/refactored 2018 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[Refactored 2017 Runtime](stocks-analysis/refactored 2017 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
+[Refactored 2018 Runtime](stocks-analysis/refactored 2018 runtime.PNG at main · JovanHumphrey/stocks-analysis (github.com))
 
 ##**Summary**
 
